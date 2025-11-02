@@ -11,3 +11,7 @@ It’s one of the most powerful and flexible features of the Go language.
 for initialization; condition; post {
     // code to execute each iteration
 }
+
+
+# Exercises:
+## - Print a 5x5 grid of *
