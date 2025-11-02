@@ -9,4 +9,5 @@ import (
 func main() {
 	fmt.Println(quote.Go())
 	forloop.ForOne()
+	forloop.ForFive()
 }
