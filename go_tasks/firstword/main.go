@@ -5,29 +5,20 @@ import (
 
 )
 
+
 func FirstWord(s string) string {
-    if len(s) == 0 {
-		return ""
-
-	}
-	
-	for _,char:= range s {
-		result:= string(char)
-
-	
-		if char == ' ' {
-			
-			
+	word := ""
+	for i := 0; i < len(s); i++ {
+		if s[i] == ' ' {
 			break
 		}
-		return result
+		word += string(s[i])
 	}
-	
-	return result
+	return word + "\n"
 }
 
 func main() {
     fmt.Print(FirstWord("hello there"))
-    // fmt.Print(FirstWord(""))
-    // fmt.Print(FirstWord("hello   .........  bye"))
+    fmt.Print(FirstWord(""))
+    fmt.Print(FirstWord("hello   .........  bye"))
 }
